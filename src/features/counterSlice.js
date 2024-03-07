@@ -9,10 +9,10 @@ export const counterSlice = createSlice({
     initialState,
     reducers: {
         increment: (state) => {
-            return { value: state.value + 1 }
+            return { value: state.value + 1 } //Add Value
         },
         decrement: (state) => {
-            return { value: state.value - 1 }
+            return { value: state.value - 1 } //Subtract files
         },
         incrementByAmount: (state, action) => {
             return { value: state.value + action.payload }
@@ -23,3 +23,5 @@ export const counterSlice = createSlice({
 export const { increment, decrement, incrementByAmount } = counterSlice.actions
 
 export default counterSlice.reducer
+
+//working state application had almost everything filled out
